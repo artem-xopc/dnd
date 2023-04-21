@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import CLogic from "./Components/Cards/CLogic";
+// import CardItem from "./Components/UI/CardItem";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <CLogic/>
     </div>
   );
 }
 
 export default App;
+
+// title: "Карточка 1",
+// title: "Карточка 2",
+// title: "Карточка 3",
+// title: "Карточка 4", <CardItem card={card} /> {console.log("Я тут")} <div className="name">{card.title}</div>
